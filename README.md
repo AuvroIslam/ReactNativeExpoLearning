@@ -48,3 +48,9 @@
 - **Child positioning**: Everything that will be child inside it, will appear on top of it
 
 
+### Scroll View
+
+- **Content overflow problem**: If I add some big text then image then big text again, I won't be able to see the text again
+- **Solution**: We need Scroll View
+- **Height requirement**: Scroll View needs a bounded height to work properly
+- **Usage**: Let's put everything that we want inside Scroll View (text and image), then we will be able to see them properly
