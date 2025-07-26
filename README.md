@@ -106,3 +106,63 @@
 ## Custom Components
 
 - **Functionality**: Like React, can take props
+
+## Styling
+
+- **Inline style**: Direct styling within components
+- **StyleSheet API**: Organized styling using StyleSheet
+
+### StyleSheet API
+
+```javascript
+const styles = StyleSheet.create({
+  container: {
+    padding: 20,
+    backgroundColor: 'lightblue',
+    borderRadius: 10,
+    margin: 10
+  },
+  text: {
+    fontSize: 20,
+    color: 'darkblue',
+    fontWeight: 'bold'
+  }
+})
+```
+
+### Multiple Styling
+
+- **Precedence rule**: Remember last style takes precedence
+
+```javascript
+import { View, Text, StyleSheet } from 'react-native'
+
+const Boxes = () => {
+  return (
+    <View>
+      <View style={[styles.box, styles.greenBox]}>
+        <Text>Green Box</Text>
+      </View>
+      <View style={[styles.box, styles.blueBox]}>
+        <Text>Blue Box</Text>
+      </View>
+    </View>
+  )
+}
+
+const styles = StyleSheet.create({
+  box: {
+    padding: 20,
+    margin: 10,
+    borderRadius: 10
+  },
+  greenBox: {
+    backgroundColor: 'lightgreen'
+  },
+  blueBox: {
+    backgroundColor: 'lightblue'
+  }
+})
+
+export default Boxes
+```
