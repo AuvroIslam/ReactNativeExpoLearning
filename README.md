@@ -102,3 +102,7 @@
 </Pressable>
 ```
 - **Arguments**: First argument is title, second argument is message and third argument is array (where there will be object for each button)
+
+## Custom Components
+
+- **Functionality**: Like React, can take props
