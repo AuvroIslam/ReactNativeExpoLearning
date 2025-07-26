@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { View,Text, Image, ImageBackground, ScrollView, Button,Pressable, Modal,StatusBar, ActivityIndicator} from 'react-native'
+import { View,Text, Image, ImageBackground, ScrollView, Button,Pressable, Modal,StatusBar, ActivityIndicator, Alert} from 'react-native'
 const logoImg= require('./assets/icon.png')
 const App = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -10,7 +10,10 @@ const App = () => {
     <View style={{ height: 100, width: 100, backgroundColor: 'blue' }} />
     <View style={{ height: 100, width: 100, backgroundColor: 'green' }} />
     <Text >Hello World</Text>
-    <Pressable  onPress={() => console.log('Pressable Pressed!')}>
+    <Pressable  onPress={() => Alert.alert('Pressable Pressed!','You pressed the Pressable component!',
+      [{ text: 'OK', onPress: () => console.log('OK Pressed') },
+        { text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel' }
+      ])}>
       <Text style={{ color: 'red' }}>Pressable</Text>
     </Pressable>
     <Image source={logoImg} style={{ height: 100, width: 100 }} />

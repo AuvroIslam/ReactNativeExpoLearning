@@ -87,3 +87,18 @@
 
 - **Purpose**: A loading circular component
 - **Props available**: Has `size`, `color` prop and `animating` (by default true) - it is like `visible` prop of Modal
+
+### Alert
+
+- **Components**: Will have a title, message and button
+- **Default button**: By default it will have OK button
+- **Example usage**:
+```javascript
+<Pressable onPress={() => Alert.alert('Pressable Pressed!', 'You pressed the Pressable component!',
+  [{ text: 'OK', onPress: () => console.log('OK Pressed') },
+   { text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel' }
+  ])}>
+  <Text style={{ color: 'red' }}>Pressable</Text>
+</Pressable>
+```
+- **Arguments**: First argument is title, second argument is message and third argument is array (where there will be object for each button)
