@@ -30,3 +30,21 @@
 
 - **Text wrapping**: All text must be wrapped inside Text component
 - **Nesting allowed**: Nesting of Text component is also allowed
+
+
+### Image
+
+- **Image types**: We can display static image, network image and local disk image
+
+#### Static Image
+- **Import requirement**: Need to import like this `const logoImg = require('./assets/icon.png')`
+
+#### Network Image
+- **No import needed**: No need to import, need to use uri and send as object
+- **Example**: `<Image source={{ uri: "https://picsum.photos/id/237/100" }} style={{ height: 100, width: 100 }} />`
+
+### Image Background
+
+- **Child positioning**: Everything that will be child inside it, will appear on top of it
+
+
