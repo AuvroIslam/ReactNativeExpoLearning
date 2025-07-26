@@ -83,3 +83,7 @@
 - **Visibility control**: `hidden` (can hide the status bar)
 - **Component sources**: There are two StatusBar components (the one used in code is from Expo)
 
+### Activity Indicator
+
+- **Purpose**: A loading circular component
+- **Props available**: Has `size`, `color` prop and `animating` (by default true) - it is like `visible` prop of Modal
