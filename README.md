@@ -166,3 +166,16 @@ const styles = StyleSheet.create({
 
 export default Boxes
 ```
+
+### Box Model
+
+- **Dimensions**: Dimensions don't have any unit like `10px`, it is `10`
+- **Child components**: Child components can use percentage like `10%`
+- **iOS shadows**: Box shadow can be applied in iOS
+- **Android alternative**: To get similar effect in Android have to use `elevation` property
+- **Shadow colors**: Shadow colors apply for both platforms
+
+### Style Inheritance
+
+- **View to Text**: View to Text doesn't work
+- **Text to Text**: Text to Text works
