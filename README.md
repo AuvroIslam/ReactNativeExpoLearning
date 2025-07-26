@@ -24,3 +24,9 @@
 - **Space usage**: Only takes space occupied by its children
 - **Full screen**: Using `flex: 1` so view takes all available screen
 - **Nested components**: Nested view components (view is like div, so the second one will go below the first view as they are in block)
+
+
+### Text
+
+- **Text wrapping**: All text must be wrapped inside Text component
+- **Nesting allowed**: Nesting of Text component is also allowed
