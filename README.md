@@ -54,3 +54,15 @@
 - **Solution**: We need Scroll View
 - **Height requirement**: Scroll View needs a bounded height to work properly
 - **Usage**: Let's put everything that we want inside Scroll View (text and image), then we will be able to see them properly
+
+### Button
+
+- **Self-closing tag**: Button in React Native is a self-closing tag
+- **Title prop**: `title="press"`, the button text will be "press"
+- **Event handling**: `onPress` is equivalent to `onClick` of React
+- **Styling**: Using `color` prop can change color, using `disabled` prop can make the button disabled
+
+### Pressable
+
+- **Use case**: Used when we want to trigger some action, if we press text or image
+- **Event handling**: Like button, has `onPress` prop
