@@ -1,10 +1,12 @@
+
 import { useState } from 'react';
-import { View,Text, Image, ImageBackground, ScrollView, Button,Pressable, Modal } from 'react-native'
+import { View,Text, Image, ImageBackground, ScrollView, Button,Pressable, Modal,StatusBar} from 'react-native'
 const logoImg= require('./assets/icon.png')
 const App = () => {
   const [isVisible, setIsVisible] = useState(false);
   return (
     <View style={{ flex: 1, backgroundColor: 'pink' }}>
+      <StatusBar backgroundColor='grey' barStyle='dark-content' />
     <View style={{ height: 100, width: 100, backgroundColor: 'blue' }} />
     <View style={{ height: 100, width: 100, backgroundColor: 'green' }} />
     <Text >Hello World</Text>

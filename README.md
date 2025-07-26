@@ -76,3 +76,10 @@
 - **Animation types**: You can use `animationType`, how it will appear
 - **Animation options**: By default it is set to `none`, you can use `fade` and `slide`
 
+### Status Bar
+
+- **Background color**: Can change background color
+- **Bar style options**: `barStyle` = `default`, `dark-content`, `light-content`
+- **Visibility control**: `hidden` (can hide the status bar)
+- **Component sources**: There are two StatusBar components (the one used in code is from Expo)
+
