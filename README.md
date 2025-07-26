@@ -61,8 +61,18 @@
 - **Title prop**: `title="press"`, the button text will be "press"
 - **Event handling**: `onPress` is equivalent to `onClick` of React
 - **Styling**: Using `color` prop can change color, using `disabled` prop can make the button disabled
+- **Style limitations**: Other styles like padding, margin don't have any effect (put it inside a View and do these things)
 
 ### Pressable
 
 - **Use case**: Used when we want to trigger some action, if we press text or image
 - **Event handling**: Like button, has `onPress` prop
+
+### Modal
+
+- **Purpose**: Overlays app content
+- **Visibility control**: Use state inside its `visible` prop, on button press make it visible
+- **Back button handling**: Also add `onRequestClose` prop - it triggers when back button or similar gestures are pressed
+- **Animation types**: You can use `animationType`, how it will appear
+- **Animation options**: By default it is set to `none`, you can use `fade` and `slide`
+
